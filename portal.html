@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *
+{
+    padding: 0;
+    margin: 0;
+}
+.container
+{
+    width: 100%;
+    height: 600px;
+    background-image: url(images/log3.jpg);
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    position: fixed;
+}
+
+input[type=submit]
+{
+    width: 140px;
+    height: 40px;
+    font-family:monospace;
+    border: 1px solid rgb(239, 7, 7);
+    border-radius: 2px;
+    box-shadow: 5px 5px 7px rgb(21, 20, 20);
+    background-color: rgb(4, 12, 249);
+    box-shadow: 5PX 5PX 10PX  whitesmoke;
+    color: aliceblue;
+    border-radius: 5px;
+    position: relative;
+    left: 100px;
+}
+input[type=submit]:hover
+{
+    transform:scale(1.10,1.10);
+}
+input[TYPE=BUTTON]
+{
+    width: 140px;
+    height: 40px;
+    font-family:monospace;
+    border: 1px solid rgb(239, 7, 7);
+    border-radius: 2px;
+    box-shadow: 5px 5px 7px rgb(21, 20, 20);
+    background-color:  rgb(4, 12, 249);
+    box-shadow: 5PX 5PX 10PX  whitesmoke;
+    color: aliceblue;
+    border-radius: 5px;
+    position: relative;
+    left: 300px;
+}
+input[type=BUTTON]:hover
+{
+    transform:scale(1.10,1.10);
+}
+input[TYPE=RESET]
+{
+    width: 140px;
+    height: 40px;
+    font-family:monospace;
+    border: 1px solid rgb(239, 7, 7);
+    border-radius: 2px;
+    box-shadow: 5px 5px 7px rgb(21, 20, 20);
+    background-color: rgb(4, 12, 249);
+    box-shadow: 5PX 5PX 10PX  whitesmoke;
+    color: aliceblue;
+    border-radius: 5px;
+    position: relative;
+    left: 500px;
+}
+input[type=RESET]:hover
+{
+    transform:scale(1.10,1.10);
+}
+label
+{
+    font-size:20PX;
+    text-align: center;
+    font-weight:500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+INPUT[TYPE=TEXT]
+{
+    width: 300px;
+    height: 30px;
+    text-align: center;
+    background-color:rgb(249, 247, 244);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: capitalize;
+    border-left: 0;
+    border-bottom: 3px solid black;
+    border-right: 0;
+    border-top: 0;
+    border-radius: 5px;
+    box-shadow: black 8px 8px 15px;
+
+}
+input[TYPE=TEL]
+{
+
+    width: 300px;
+    height: 30px;
+    text-align: center;
+    background-color:rgb(249, 247, 244);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: capitalize;
+    border-left: 0;
+    border-bottom: 3px solid black;
+    border-right: 0;
+    border-top: 0;
+    border-radius: 5px;
+    box-shadow: black 8px 8px 15px;
+}
+select
+{
+    width: 300px;
+    height: 30px;
+    text-align: center;
+    background-color:rgb(249, 247, 244);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: capitalize;
+    border-left: 0;
+    border-bottom: 3px solid black;
+    border-right: 0;
+    border-top: 0;
+    border-radius: 5px;
+    box-shadow: black 8px 8px 15px;
+
+
+}
+input[TYPE=DATE]
+{
+    width: 300px;
+    height: 30px;
+    text-align: center;
+    background-color:rgb(249, 247, 244);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: capitalize;
+    border-left: 0;
+    border-bottom: 3px solid black;
+    border-right: 0;
+    border-top: 0;
+    border-radius: 5px;
+    box-shadow: black 8px 8px 15px;    
+}
+input[type=text]:focus
+{
+    background-color:rgba(255, 255, 120, 0.882);
+    transform: scale(1.15,1.15);
+}
+input[type=tel]:focus
+{
+    background-color:rgba(255, 255, 120, 0.882);
+    transform: scale(1.15,1.15);
+}
+input[type=date]:focus
+{
+    background-color:rgba(255, 255, 120, 0.882);
+    transform: scale(1.15,1.15);
+}
+select:focus
+{
+    background-color:rgba(255, 255, 120, 0.882);
+    transform: scale(1.15,1.15);
+}
+form
+{
+    width: 50%;
+    height: 30%;
+    position:relative;
+    top: 45PX;
+    left:120PX;
+    text-align:left;
+   
+}
+table
+{
+    border-collapse: collapse;
+    border: 5px solid rgb(5, 247, 25);
+    box-shadow: -25px -25px 20px black;
+    width: 50%;
+    height: 90%;
+    
+}
+td
+{
+    padding:5PX;
+}
+tr
+{
+    background-color:rgba(255,255,255,0.3);
+    backdrop-filter: blur(5px);
+}
+.A
+{
+  color: aliceblue;
+  font-size: 22PX;
+  font-weight: bolder;
+}
+input::-webkit-file-upload-button
+{
+    width: 300px;
+    height: 30px;
+    text-align: center;
+    background-color:rgb(249, 247, 244);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: capitalize;
+    border-left: 0;
+    border-bottom: 3px solid black;
+    border-right: 0;
+    border-top: 0;
+    border-radius: 5px;
+    box-shadow: black 8px 8px 15px;
+}
+
+
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <TABLE>
+                <TR>
+                    <td><LABEl>NAME</LABEl></td>
+                    <TD class="A">:</TD>
+                    <TD><input type="TEXT" required></TD>
+                    <TD><LABEL>FATHER NAME</LABEL></TD>
+                    <TD class="A">:</TD>
+                    <TD><input type="TEXT" required></TD>
+                </TR>
+                <TR>
+                    <TD><LABEL>MOBILE NO.</LABEL></TD>
+                    <TD class="A">:</TD>
+                    <TD><input type="tel" maxlength="10" minlength="10" required "></TD>
+                        <TD><LAbel>AADHAR NO.</LAbel></TD>
+                        <TD class=" A">:</TD>
+                    <TD><input type="text" maxlength="12" minlength="12" required></TD>
+                </TR>
+                <tr>
+                    <TD><LABEL>GENDER</LABEL></TD>
+                    <TD class=" A">:</TD>
+                    <TD><select required>
+                        <option value="">MALE</option>
+                        <OPtion>FEMALE</OPtion>
+                        <OPTion>OTHERS</OPTion>
+                        </select>
+                    </TD>
+                    <TD> <LABEl>SELECT SEAT</LABEl></TD>
+                    <TD class="A">:</TD>
+                    <TD><SELEct required>
+                            <option>SLEEPER</option>
+                            <OPTIon>AC</OPTIon>
+                            <OPTion>CHAIR</OPTion>
+                            <OPTion>WINDOW SEATS</OPTion>
+                        </SELEct></TD>
+                </TR>
+                <TR>
+                    <TD><LABEl>ADDRESS</LABEl></TD>
+                    <TD class="A">:</TD>
+                    <TD><input type="text" required></TD>
+                    <TD><label for="">JOURNEY DATE</label></TD>
+                    <TD class="A">:</TD>
+                    <TD><input type="date" required></TD>
+                </TR>
+                <TR>
+                    <TD><LABEL>FROM</LABEL></TD>
+                    <TD class="A">:</TD>
+                    <TD><input type="text" required></TD>
+                    <TD><LABEL>TO</LABEL></TD>
+                    <TD class="A">:</TD>
+                    <TD><input type="TEXT" required></TD>
+                </TR>
+                <tr>
+                    <td><Label>UPLOAD PHOTO</Label></td>
+                    <TD class="A">:</TD>
+                    <TD><INPUT type="file" value="PHOTO"></INPUT></TD>
+                    <TD><LABEL>UPLOAD PAN</LABEL></TD>
+                    <TD class="A">:</TD>
+                    <TD><INput type="FILE" value="PAN CARD"></INput></TD>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </TABLE><BR>
+            <input type="SUBMIT" value="BOOK YOUR TICKET">
+            <a href="fair_rates.html">
+                <input type="button" value="BACK"
+                ></a>
+                <input type="reset" value="RESET">
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comment_us#humsafar travels.org</title>
+    <style>
+        body
+{
+    padding: 0;
+    margin: 0;
+}
+.container
+{
+  width: 98%;
+  height: 580px;  
+  background-image: url(images/loim3.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  
+}
+.commentform
+{
+    width: 45%;
+    height: 80%;
+    border-radius: 10px;
+    position:absolute;
+    top: 10%;
+    left:28%;
+    background-color: rgba(239, 245, 240, 0.6);
+}
+label
+{
+    font-size:25PX;
+    text-align: center;
+    font-weight:bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.name
+{
+    width: 300px;
+    height: 30px;
+    text-align: center;
+    background-color:rgb(249, 247, 244);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: capitalize;
+    border-left: 0;
+    border-bottom: 3px solid black;
+    border-right: 0;
+    border-top: 0;
+    border-radius: 5px;
+    box-shadow: black 8px 8px 15px;
+    
+}
+input[type=email]
+{
+    width: 300px;
+    height: 30px;
+    background-color:rgb(244, 243, 240);
+    text-align: center;
+    border-left: 0;
+    border-bottom: 3px solid black;
+    border-right: 0;
+    border-top: 0;
+    border-radius: 5px;
+    box-shadow: black 8px 8px 15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+input[type=submit]
+{
+    background-color:rgb(16, 115, 215);
+    width: 130px;
+    height: 35px;
+    border: 3px solid black;
+    border-radius: 8px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight:bolder;
+    color: aliceblue;
+    box-shadow: 10px 10px 15px black;
+
+}
+form
+{
+    position:relative;
+    left: 24%;
+    top: 8%;
+    
+}
+input[type=button]
+{
+    background-color:rgb(16, 115, 215);
+    width: 130px;
+    height: 35px;
+    border: 3px solid black;
+    border-radius: 8px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight:bolder;
+    position: relative;
+    left: 40px;
+    color: aliceblue;
+    box-shadow: 10px 10px 15px black;
+}
+input[type=submit]:hover
+{
+    transform: scale(1.10,1.10);
+    box-shadow: 10px 10px 15px black;
+}
+input[type=button]:hover
+{
+    transform: scale(1.10,1.10);
+    box-shadow: 10px 10px 15px black;
+}
+.name:focus
+{
+    background-color:rgba(255, 255, 120, 0.882);
+}
+input[type=email]:focus
+{
+    background-color:rgba(255, 255, 120, 0.882);
+}
+textarea
+{
+    max-width: 250px;
+    max-height: 135px;
+    min-width: 250px;
+    min-height: 135px;
+    background-color:rgb(246, 243, 238);
+    text-transform: capitalize;
+    padding: 25px;
+    border-left: 0;
+    border-bottom: 3px solid black;
+    border-right: 0;
+    border-top: 0;
+    border-radius: 5px;
+    box-shadow: black 8px 8px 15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    word-spacing: 2px;
+    font-family: cursive;
+}
+textarea:focus
+{
+    background-color:rgba(255, 255, 120, 0.882);
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="commentform">
+            <form method="post" action="https://script.google.com/macros/s/AKfycbyNDrlMWlK9wBX2joJV8rnYVFMFOE9-ygB0Rt_Bwkv5VLwQ5aNj3bTro1iiDpmV1Oxi/exec">
+                <label>NAME:</label><BR>
+                <input type="text" class="name" name="name" required><BR>
+                <LAbel>EMAIL:</LAbel><BR>
+                    <INput type="email" name="email" required></INput><BR><BR>
+                        <LABEL>COMMENT:</LABEL><BR>
+                        <textarea required name="comment"></textarea><br><br>
+                        <input type="submit" value="send">
+                        <a href="portals.html"><input type="button" value="back"></a>
+            </form>
+        </div>
+
+    </div>
+    
+</body>
+</html>

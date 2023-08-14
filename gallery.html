@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery</title>
+    <style>
+        .nav
+        {
+            border-radius:1px;
+            background-color: rgb(63, 56, 56);
+            width: 100%;
+            height: 70px;
+            position:fixed;
+            text-decoration: none;
+            padding: auto;
+            z-index: 1;
+        }
+        .nav ul
+        {
+      
+        }
+        .nav ul li
+        {
+            display:inline;
+            padding:5px;
+            margin:20PX;
+            font-size: x-large;
+            color: black;
+            font-family: monospace;
+            font-weight: bolder;
+            border-radius: 8px;
+            background-color:rgb(255, 255, 255);
+            
+        }
+        .nav ul li:hover
+        {
+            border: 3px solid black;
+            background-color: red;
+            color: azure;
+            box-shadow: rgb(124, 247, 53) 5px 5px 10px;
+
+        }
+        .nav ul a
+        {
+            text-decoration: none;
+        }
+        .nav ul li:active
+        {
+            background-color:chartreuse;
+            color: black;
+            box-shadow:red 5px 5px 10px;
+        }
+        .gallery
+        {
+            width:92%;
+            height: 90% ;
+            background-image: url(images/log3.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            padding: 50px;
+            padding-top:130px;
+        
+
+
+            display: grid;
+            grid-template-columns:1fr 1fr;
+            grid-template-rows:  300px 300px 300px 300px 300px 300px 300px 300PX 300PX;
+            grid-gap:120px 90px;
+        }
+
+        .img1
+        {
+            border: 2px solid black;
+            border-radius: 50px;
+            background-image: url(images/b1.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            box-shadow: 20px 25px 20px rgb(9, 10, 1);
+            transition: all 0.5s; 
+        
+            
+        }
+        .img1:hover
+        {
+            transform: scale(1.10,1.10);
+            box-shadow: 20PX 25PX 20PX rgb(36, 36, 36);
+        }
+        .img2
+        {
+            border-radius: 50px;
+            border: 2px solid black;
+            background-image: url(images/b2.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            box-shadow: 20px 25px 20px rgb(9, 10, 1);
+            transition: all 0.5s;
+        }
+        .img2:hover
+        {
+            transform: scale(1.10,1.10);
+            box-shadow: 20PX 25PX 20PX rgb(36, 36, 36);
+        }
+        .img3
+        {
+            border-radius: 50px;
+            border: 2px solid black;
+            background-image: url(images/b3.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            box-shadow: 20px 25px 20px rgb(9, 10, 1);
+            transition: all 0.5s;
+        }
+        .img3:hover
+        {
+            transform: scale(1.10,1.10);
+            box-shadow: 20PX 25PX 20PX rgb(36, 36, 36);
+        }
+        .img4
+        {
+            border-radius: 50px;
+            border: 2px solid black;
+            background-image: url(images/bus.gif);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            box-shadow: 20px 25px 20px rgb(9, 10, 1);
+            transition: all 0.5s;
+        }
+        .img4:hover
+        {
+            transform: scale(1.10,1.10);
+            box-shadow: 20PX 25PX 20PX rgb(36, 36, 36);
+        }
+        .img5
+        {
+            border: 2px solid black;
+            border-radius: 50px;
+            background-image: url(images/9631788_4229114.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            box-shadow: 20px 25px 20px rgb(9, 10, 1);
+            transition: all 0.5s;
+        }
+        .img5:hover
+        {
+            transform: scale(1.10,1.10);
+            box-shadow: 20PX 25PX 20PX rgb(36, 36, 36);
+        }
+        .img6
+        {
+            border-radius: 50px;
+            border: 2px solid black;
+            background-image: url(images/loim3.jpeg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            box-shadow: 20px 25px 20px rgb(9, 10, 1);
+            transition: all 0.5s;
+        }
+        .img6:hover
+        {
+            transform: scale(1.10,1.10);
+            box-shadow: 20PX 25PX 20PX rgb(36, 36, 36);
+        }
+        .img7
+        {
+            border-radius: 50px;
+            border: 2px solid black;
+            background-image: url(images/busy\ bus\ 1.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            box-shadow: 20px 25px 20px rgb(9, 10, 1);
+            transition: all 0.5s;
+        }
+        .img7:hover
+        {
+            transform: scale(1.10,1.10);
+            box-shadow: 20PX 25PX 20PX rgb(36, 36, 36);
+        }
+        .img8
+        {
+            border-radius: 50px;
+            border: 2px solid black;
+            background-image: url(images/Picsart_22-08-24_17-04-53-528.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            box-shadow: 20px 25px 20px rgb(9, 10, 1);
+            transition: all 0.5s;
+        }
+        .img8:hover
+        {
+            transform: scale(1.10,1.10);
+            box-shadow: 20PX 25PX 20PX rgb(36, 36, 36);
+        }
+        .img9
+        {
+            border-radius: 50px;
+            border: 2px solid black;
+            background-image: url(images/staffs.jpeg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            box-shadow: 20px 25px 20px rgb(9, 10, 1);
+            transition: all 0.5s;
+    
+        }
+        .img9:hover
+        {
+            transform: scale(1.10,1.10);
+            box-shadow: 20PX 25PX 20PX rgb(36, 36, 36);
+        }
+        .img10
+        {
+            border-radius: 50px;
+            border: 2px solid black;
+            background-image: url(images/LOG1.webp);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            box-shadow: 20px 25px 20px rgb(9, 10, 1);
+            transition: all 0.5s;
+        }
+        .img10:hover
+        {
+            transform: scale(1.10,1.10);
+            box-shadow: 20PX 25PX 20PX rgb(36, 36, 36);
+        }
+        .img11
+        {
+            border-radius: 50px;
+            border: 2px solid black;
+            background-image: url(images/20928599_6397647.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            box-shadow: 20px 25px 20px rgb(9, 10, 1);
+            transition: all 0.5s;
+        }
+        .img11:hover
+        {
+            transform: scale(1.10,1.10);
+            box-shadow: 20PX 25PX 20PX rgb(36, 36, 36);
+        }
+        .img12
+        {
+            border-radius: 50px;
+            border: 2px solid black;
+            background-image: url(images/wifi.webp);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            box-shadow: 20px 25px 20px rgb(9, 10, 1);
+            transition: all 0.5s;
+        }
+        .img12:hover
+        {
+            transform: scale(1.10,1.10);
+            box-shadow: 20PX 25PX 20PX rgb(36, 36, 36);
+        }
+        .img13
+        {
+            border-radius: 50px;
+            border: 2px solid black;
+            background-image: url(images/bus.jpeg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            box-shadow: 20px 25px 20px rgb(9, 10, 1);
+            transition: all 0.5s;
+        }
+        .img13:hover
+        {
+            transform: scale(1.03,1.03);
+            box-shadow: 20PX 25PX 20PX rgb(36, 36, 36);
+        }
+        .img14
+        {
+            border-radius: 50px;
+            border: 2px solid black;
+            background-image: url(images/food\ images.jpeg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            box-shadow: 20px 25px 20px rgb(9, 10, 1);
+            transition: all 0.5s;
+        }
+        .img14:hover
+        {
+            transform: scale(1.03,1.03);
+            box-shadow: 20PX 25PX 20PX rgb(36, 36, 36);
+        }
+        .img15
+        {
+            border-radius: 50px;
+            border: 2px solid black;
+            background-image: url(images/15035974_5557857.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            box-shadow: 20px 25px 20px rgb(9, 10, 1);
+            transition: all 0.5s;
+        }
+        .img15:hover
+        {
+            transform: scale(1.03,1.03);
+            box-shadow: 20PX 25PX 20PX rgb(36, 36, 36);
+        }
+        .img16
+        {
+            border-radius: 50px;
+            border: 2px solid black;
+            background-image: url(images/9631788_4229114.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            box-shadow: 20px 25px 20px rgb(9, 10, 1);
+            transition: all 0.5s;
+        }
+        .img16:hover
+        {
+            transform: scale(1.03,1.03);
+            box-shadow: 20PX 25PX 20PX rgb(36, 36, 36);
+        }
+        .img17
+        {
+            border-radius: 50px;
+            border: 2px solid black;
+            background-image: url(images/busy\ bus4.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            box-shadow: 20px 25px 20px rgb(9, 10, 1);
+            transition: all 0.5s;
+        }
+        .img17:hover
+        {
+            transform: scale(1.03,1.03);
+            box-shadow: 20PX 25PX 20PX rgb(36, 36, 36);
+        }
+        .img18
+        {
+            border-radius: 50px;
+            border: 2px solid black;
+            background-image: url(images/imagelo.webp);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            box-shadow: 20px 25px 20px rgb(9, 10, 1);
+            transition: all 0.5s;
+        }
+        .img18:hover
+        {
+            transform: scale(1.03,1.03);
+            box-shadow: 20PX 25PX 20PX rgb(36, 36, 36);
+        }
+        body
+        {
+            padding: 0;
+            margin: 0;
+        }
+        .cards
+        
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <a href="home.html" target="_blank"><li>HOME</li></a>
+         <a href="about us.html" target="_blank"><li>ABOUT US</li></a>
+            <a href="portals.html"><li>PORTALS</li></a>
+            <a href="gallery.html" target="_blank"><li>GALLERY</li></a>
+            <a href="advertisement.html" target="_blank"><li>ADVERTISEMENT</li></a>
+            <a href="index.html">
+                <li>SIGN OUT</li>
+            </a>
+            <a href="newid.html">
+                <li>SIGN IN</li>
+                
+            </a>
+            
+            
+        </ul>
+     </div>
+     <div class="gallery">
+     <div class="img1"></div>
+     <div class="img2"></div>
+     <div class="img3"></div>
+     <div class="img4"></div>
+     <div class="img5"></div>
+     <div class="img6"></div>
+     <div class="img7"></div>
+     <div class="img8"></div>
+     <div class="img9"></div>
+     <div class="img10"></div>
+     <div class="img11"></div>
+     <div class="img12"></div>
+     <div class="img13"></div>
+     <div class="img14"></div>
+     <div class="img15"></div>
+     <div class="img16"></div>
+     <div class="img17"></div>
+     <div class="img18"></div>
+     </div>
+     
+</body>
+</html>

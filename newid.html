@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup#humsafar_travel</title>
+    <style>
+        body
+{
+    padding: 0;
+    margin: 0;
+}
+.container
+{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    justify-content: center;
+    justify-items: center;
+}
+.formbox
+{
+    width: 60%;
+    height: 500px;
+    border-radius: 10px;
+    z-index: 2;
+    position: absolute;
+    top: 7%;
+    left:17%;
+    background-color: rgba(255,255,255,0.35);
+}
+.logo
+{
+    width: 300px;
+    height: 100px;
+    position: relative;
+    left: 30%;
+    background-image: url(images/Picsart_22-08-24_17-04-53-528.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+label
+{
+    font-size:15PX;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+input[type=email]
+{
+    width: 300px;
+    height: 30px;
+    background-color:rgb(244, 243, 240);
+    text-align: center;
+    border-left: 0;
+    border-bottom: 3px solid black;
+    border-right: 0;
+    border-top: 0;
+    border-radius: 5px;
+    box-shadow: black 8px 8px 15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+input[type=TEXT]
+{
+    width: 300px;
+    height: 30px;
+    background-color:rgb(244, 243, 240);
+    text-align: center;
+    border-left: 0;
+    border-bottom: 3px solid black;
+    border-right: 0;
+    border-top: 0;
+    border-radius: 5px;
+    box-shadow: black 8px 8px 15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+input[type=NUMBER]
+{
+    width: 300px;
+    height: 30px;
+    background-color:rgb(244, 243, 240);
+    text-align: center;
+    border-left: 0;
+    border-bottom: 3px solid black;
+    border-right: 0;
+    border-top: 0;
+    border-radius: 5px;
+    box-shadow: black 8px 8px 15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+input[type=PASSWORD]
+{
+    width: 300px;
+    height: 30px;
+    background-color:rgb(244, 243, 240);
+    text-align: center;
+    border-left: 0;
+    border-bottom: 3px solid black;
+    border-right: 0;
+    border-top: 0;
+    border-radius: 5px;
+    box-shadow: black 8px 8px 15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+input[type=TEL]
+{
+    width: 300px;
+    height: 30px;
+    background-color:rgb(244, 243, 240);
+    text-align: center;
+    border-left: 0;
+    border-bottom: 3px solid black;
+    border-right: 0;
+    border-top: 0;
+    border-radius: 5px;
+    box-shadow: black 8px 8px 15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+select
+{
+    width: 300px;
+    height: 30px;
+    background-color:rgb(244, 243, 240);
+    text-align: center;
+    border-left: 0;
+    border-bottom: 3px solid black;
+    border-right: 0;
+    border-top: 0;
+    border-radius: 5px;
+    box-shadow: black 8px 8px 15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+input[type=TEXT]:focus
+{
+    background-color:rgba(255, 255, 120, 0.882);
+}
+input[type=TEL]:focus
+{
+    background-color:rgba(255, 255, 120, 0.882);
+}
+input[type=email]:focus
+{
+    background-color:rgba(255, 255, 120, 0.882);
+}
+input[type=PASSWORD]:focus
+{
+    background-color:rgba(255, 255, 120, 0.882);
+}
+input[type=NUMBER]:focus
+{
+    background-color:rgba(255, 255, 120, 0.882);
+}
+select:focus
+{
+    background-color:rgba(255, 255, 120, 0.882);
+}
+input[type=submit]
+{
+    background-color:rgb(16, 115, 215);
+    width: 200px;
+    height: 35px;
+    border: 3px solid black;
+    border-radius: 8px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight:bolder;
+    color: aliceblue;
+    box-shadow: 10px 10px 15px black;
+    position: relative;
+    top: 50PX;
+    left: 160PX;
+
+}
+table
+{
+    position: relative;
+    left: 20%;
+}
+input[type=submit]:hover
+{
+    transform: scale(1.10,1.10);
+    box-shadow: 10px 10px 15px black;
+}
+input[type=button]
+{
+    background-color:rgb(16, 115, 215);
+    width: 200px;
+    height: 35px;
+    border: 3px solid black;
+    border-radius: 8px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight:bolder;
+    color: aliceblue;
+    box-shadow: 10px 10px 15px black;
+    position: relative;
+    top: 50PX;
+    left: 220PX;
+}
+input[type=button]:hover
+{
+    transform: scale(1.10,1.10);
+    box-shadow: 10px 10px 15px black;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <VIDEo autoplay muted loop width="100%">
+            <SOurce src="IMAGES/pexels-ambientnature-atmosphere-5491695.mp4" type="video/mp4" >
+        </VIDEo>
+        <div class="formbox">
+            <div class="logo"></div>
+            <div class="form">
+                <form action="">
+                    <table>
+                        <tr>
+                            <td><LABEL>NAME</LABEL></td>
+                            <TD>:</TD>
+                            <TD><INput type="text" required></INput></TD>
+                        </tr>
+                        <tr>
+                            <td><LAbel>MOBILE NO.</LAbel></td>
+                            <TD>:</TD>
+                            <TD><INput type="tel" minlength="10" maxlength="10"required></INput></TD>
+                        </tr>
+                        <tr>
+                            <td><LABEL>AADHAR NO.</LABEL></td>
+                            <TD>:</TD>
+                            <TD><INput type="text" minlength="12" maxlength="12"required></INput></TD>
+                        </tr>
+                        <tr>
+                            <td><LABEL>EMAIL ID.</LABEL></td>
+                            <TD>:</TD>
+                            <TD><INput type="email"required></INput></TD>
+                        </tr>
+                        <TR>
+                            <TD><LABEL>SELECT ID.TYPE</LABEL></TD>
+                            <TD><LABEL>:</LABEL></TD>
+                            <TD><SELECT required>
+                                <OPtion>CUSTOMER</OPtion>
+                                <OPtion>BRANCH</OPtion>
+                                <OPtion>AGENT</OPtion>
+                            </SELECT></TD>
+                        </TR>
+                        <tr>
+                            <td><LABEL>CREATE PASSWORD</LABEL></td>
+                            <TD>:</TD>
+                            <TD><INput type="password"required></INput></TD>
+                        </tr>
+                        <tr>
+                            <td><LABel>CONFIRM PASSWORD</LABel></td>
+                            <TD>:</TD>
+                            <TD><INput type="password"required></INput></TD>
+                        </tr>
+                    </table>
+                   <INput type="SUBMIT" value="SIGN IN"></INput> 
+                   <a href="index.html"><INput type="BUTTON" value="CANCEL"></INput></a>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

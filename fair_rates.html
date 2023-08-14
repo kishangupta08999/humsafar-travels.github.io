@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fair rates</title>
+    <style>
+        *
+{
+    padding: 0;
+    margin: 0;
+}
+.rate_container
+{
+    width: 100%;
+    height: 600px;
+    background-image: url(images/loim3.jpeg);
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    
+}
+.box
+{
+    width: 70%;
+    height: 65%;
+    border: 3px solid black;
+    box-shadow: -10px -10px 15px black;
+    position:relative;
+    top: 50px;
+    left: 170px;
+    border-radius: 35px;
+    backdrop-filter: blur(50px);
+    background-color: rgba(255,255,255,.05);animation-name: an;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count:1;
+    animation-direction:reverse;
+    position: absolute;
+    top:0;
+}
+
+@keyframes an 
+{
+    from {transform: scale(1, 1);}
+    to{transform: scale(1.35,1.35);}
+}
+table
+{
+    background-color: aliceblue;
+    border-radius: 50px;
+    z-index: 2;
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    height: 280px;
+    border-collapse: collapse;
+    text-align: center;
+    border: 5px solid rgb(98, 4, 248);
+    voice-family:female;
+    richness: 50px;
+    
+    
+    
+}
+tr
+{
+background-color: rgb(161, 157, 161);
+color: black;
+border: 2px solid black;
+text-transform: capitalize;
+font-family: cursive;
+
+}
+th
+{
+    background-color: rgb(140, 255, 0);
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+td th
+{
+    padding: 5px 12px;
+}
+input[type=button]
+{
+    width: 100px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(238, 246, 6);
+    box-shadow: 2px 2px black;
+    text-transform:capitalize;
+    cursor: pointer;
+}
+input[type=button]:hover
+{
+    background-color: red;
+    color: aliceblue;
+    box-shadow: 2px 2px rgb(5, 13, 244);
+}
+button
+{
+  width: 150px;
+  height: 50px;
+  border: 5px solid black;
+  border-radius: 15px;
+  font-weight: bolder;
+  font-family:monospace;
+  font-size: 20px;
+  background-color: blue;
+  color: rgb(246, 250, 9);
+  position: absolute;
+  bottom: 15%;
+  left: 40%;
+  box-shadow: 10px 10px 15px black;
+}
+button:hover
+{
+    transform:scale(1.15,1.15);
+}
+    </style>
+</head>
+
+<body>
+            <div class="rate_container">
+                <div class="box">
+                <table>
+                <tr>
+                    <th>bus no.</th>
+                    <th>bus name</th>
+                    <th>from</th>
+                    <th>to</th>
+                    <th>arrival time</th>
+                    <th>book now</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>humsafar</td>
+                    <td>azamgarh</td>
+                    <td>delhi</td>
+                    <td>09:00am</td>
+                    <td><a href="portal.html"><input type="button" value="book now"></a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>humsafar</td>
+                    <td>azamgarh</td>
+                    <td>delhi</td>
+                    <td>10:00am</td>
+                    <td><a href="portal.html"><input type="button" value="book now"></a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>humsafar</td>
+                    <td>azamgarh</td>
+                    <td>mumbai</td>
+                    <td>10:00am</td>
+                    <td><a href="portal.html"><input type="button" value="book now"></a></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>humsafar</td>
+                    <td>azamgarh</td>
+                    <td>delhi</td>
+                    <td>10:30am</td>
+                    <td><a href="portal.html"><input type="button" value="book now"></a></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>humsafar</td>
+                    <td>azamgarh</td>
+                    <td>lucknow</td>
+                    <td>11:00am</td>
+                    <td><a href="portal.html"><input type="button" value="book now"></a></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>humsafar</td>
+                    <td>azamgarh</td>
+                    <td>varanasi</td>
+                    <td>11:15am</td>
+                    <td><a href="portal.html"><input type="button" value="book now"></a></td>
+                </tr>
+
+                </table>
+
+                </div>
+                <a href="portals.html"><button>BACK</button></a>
+
+            </div>
+            
+
+
+</body>
+
+</html>

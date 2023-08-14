@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav
+        {
+            border-radius:5px;
+            background-color: rgb(63, 56, 56);
+            width: 100%;
+            height: 70px;
+            position:fixed;
+            text-decoration: none;
+            padding: auto;
+            z-index: 1;
+        }
+        .nav ul
+        {
+            margin-top:20px;
+      
+        }
+        .nav ul li
+        {
+            display:inline;
+            padding:5px;
+            margin:20PX;
+            font-size: x-large;
+            color: black;
+            font-family: monospace;
+            font-weight: bolder;
+            border-radius: 8px;
+            background-color:rgb(255, 255, 255);
+            
+        }
+        .nav ul li:hover
+        {
+            border: 3px solid black;
+            background-color: red;
+            color: azure;
+            box-shadow: rgb(124, 247, 53) 5px 5px 10px;
+        }
+        .nav ul a
+        {
+            text-decoration: none;
+        }
+        .nav ul li:active
+        {
+            background-color:chartreuse;
+            color: black;
+            box-shadow:red 5px 5px 10px;
+        }
+        .container
+        {
+            width:100%;
+            height:95%;
+            background:url(images/loim3.jpeg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            padding-top: 80px;
+            position:relative;
+
+        }
+        .intro1
+        {
+            border: 5px solid rgb(14, 13, 13);
+            width:80%;
+            height: 300px;
+            border-radius: 15px;
+            margin: 100px;
+            transition: all 1s;
+            background-color:rgb(255, 69, 1);
+            animation-name: int;
+            animation-duration: 3s;
+            animation-timing-function: linear;animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+
+        }
+       /* @keyframes int 
+        {
+            from{border:black solid 5px;}
+            to{border:rgb(20, 4, 245) solid 17px;}
+        }*/
+        .intro2
+        {
+            border: 5px solid rgb(14, 13, 13);
+            width:80%;
+            height: 300px;
+            border-radius: 15px;
+            margin:100px;
+            transition: all 1s;
+            background-color:rgb(255, 69, 1);
+            animation-name: int;
+            animation-duration: 3s;
+            animation-timing-function: linear;animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+        }
+        .intro3
+        {
+            border: 5px solid rgb(14, 13, 13);
+            width:80%;
+            height: 300px;
+            border-radius: 15px;
+            margin: 100px;
+            transition: all 1s;
+            background-color:rgb(255, 69, 1);
+            animation-name: int;
+            animation-duration: 3s;
+            animation-timing-function: linear;animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+        }
+        .intro4
+        {
+            border: 5px solid rgb(14, 13, 13);
+            width:80%;
+            height: 300px;
+            border-radius: 15px;
+            margin: 100px;
+            transition: all 1s;
+            background-color:rgb(255, 69, 1);
+            animation-name: int;
+            animation-duration: 3s;
+            animation-timing-function: linear;animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+        }
+        .intro5
+        {
+            border: 5px solid rgb(14, 13, 13);
+            width:80%;
+            height: 300px;
+            border-radius: 15px;
+            margin: 100px;
+            transition: all 1s;
+            background-color:rgb(255, 69, 1)
+            ;
+            animation-name: int;
+            animation-duration: 3s;
+            animation-timing-function: linear;animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+        }
+        .intro1:hover
+        {
+            background-color: azure;
+            box-shadow:rgb(255, 69, 1) 40px 45px 5px;
+            color: rgb(10, 10, 9);
+        }
+        .intro2:hover
+        {
+            background-color: azure;
+            box-shadow:rgb(244, 66, 7)40px 40px 
+            5px;
+            color: black;
+        }
+        .intro3:hover
+        {
+            background-color: azure;
+            box-shadow: rgb(255, 69, 1)40px 40px 5px;
+            color: black;
+        }
+        .intro4:hover
+        {
+            background-color: azure;
+            box-shadow:  rgb(255, 69, 1) 40px 40px 5px;
+            color: black;
+        }
+        .intro5:hover
+        {
+            background-color: azure;
+            box-shadow: rgb(255, 69, 1) 40px 40px 5px;
+            color: black;
+        }
+        .i1i
+        {
+            border-radius: 17px;
+            width: 30%;
+            height: 90%;
+            margin:10px;
+            float: left;
+            background-image: url(images/b3.jpg);
+            background-repeat: no-repeat;
+            background-size:100% 100%;
+
+        }
+        .i1c
+        {
+            border-radius:17px;
+            width:60%;
+            height: 90%;
+            float: right;
+            
+        }
+        .i1c h1
+        {
+            text-align: center;
+            background-color: aqua;
+            color: maroon;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight:600PX;
+            font-size: 35px;
+        }
+        .i1c p
+        {
+            line-height: 35PX;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 100PX;
+            font: size 16%;
+        }
+        .i2i
+        {
+            border-radius: 17px;
+            width: 30%;
+            height: 90%;
+            margin:10px;
+            float:right;
+            background-image: url(images/food\ images.jpeg);
+            background-repeat: no-repeat;
+            background-size:100% 100%;
+
+        }
+        .i2c
+        {
+            border-radius:17px;
+            width:60%;
+            height: 90%;
+            float:left;
+            
+        }
+        .i2c h1
+        {
+            text-align: center;
+            background-color: aqua;
+            color: maroon;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight:600PX;
+            font-size: 35px;
+        }
+        .i2c p
+        {
+            line-height: 35PX;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 100PX;
+            font-size: 16px;
+        }
+        .i3i
+        {
+            border-radius: 17px;
+            width: 30%;
+            height: 90%;
+            margin:10px;
+            float: left;
+            background-image: url(images/staffs.jpeg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+
+        }
+        .i3c
+        {
+            border-radius:17px;
+            width:60%;
+            height: 90%;
+            float: right;
+            
+        }
+        .i3c h1
+        {
+            text-align: center;
+            background-color: aqua;
+            color: maroon;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight:600PX;
+            font-size: 35px;
+        }
+        .i3c p
+        {
+            line-height: 35PX;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 100PX;
+            font-size: 16px;
+    
+        }
+        .i4i
+        {
+            border-radius: 17px;
+            width: 30%;
+            height: 90%;
+            margin:10px;
+            float:right;
+            background-image: url(images/wifi.webp);
+            background-repeat: no-repeat;
+            background-size:100% 100%;
+
+        }
+        .i4c
+        {
+            border-radius:17px;
+            width:60%;
+            height: 90%;
+            float: left;
+            
+        }
+        .i4c h1
+        {
+            text-align: center;
+            background-color: aqua;
+            color: maroon;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight:600PX;
+            font-size: 35px;
+        }
+        .i4c p
+        {
+            line-height: 35PX;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 100PX;
+            font-size: 16px;
+        
+        }
+        .i5i
+        {
+            border-radius: 17px;
+            width: 30%;
+            height: 90%;
+            margin:10px;
+            float:left;
+            background-image: url(images/busy\ bus4.jpg);
+            background-repeat: no-repeat;
+            background-size:100% 100%;
+
+        }
+        .i5c
+        {
+            border-radius:17px;
+            width:60%;
+            height: 90%;
+            float:RIGHT;
+            
+        }
+        .i5c h1
+        {
+            text-align: center;
+            background-color: aqua;
+            color: maroon;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight:600PX;
+            font-size: 35px;
+        }
+        .i5c p
+        {
+            line-height: 35PX;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 100PX;
+            font-size: 16px;
+            
+        }
+        body
+        {
+            padding: 0;
+            margin: 0;
+        }
+        .cards
+        {   
+            width: 600px;
+            height:100%;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            border-radius: 15px;
+            padding: 170px;
+            display:grid;
+            grid-template-columns: 230px 230px 230px;
+            grid-template-rows: 220px 220px;
+            grid-gap: 110px 110px;
+        }
+        .cards1
+        {
+            width: 200px;
+            height: 200px;
+            border-radius: 20px;
+            border: 7px solid rgb(7, 251, 39);
+            box-shadow: 20px 25px 20px rgb(9, 10, 1);
+            transition: all 0.10s;
+            background-color:gold;
+            background-image: url(images/COMMENT\ CARDS.jpg);
+            background-repeat: repeat;
+            background-size: 100% 100%;
+        }
+        .cards2
+        {
+            width: 200px;
+            height: 200px;
+            border-radius: 20px;
+            border: 7px solid rgb(7, 251, 39);
+            box-shadow: 20px 25px 20px rgb(9, 10, 1);
+            transition: all 0.10s;
+            background-color:gold;
+            background-image: url(images/CONTACT\ US\ CARDS.jpg);
+            background-repeat: repeat;
+            background-size: 100% 100%;
+            
+            
+        }
+        .cards3
+        {
+            width: 200px;
+            height: 200px;
+            border-radius: 20px;
+            border: 7px solid rgb(7, 251, 39);
+            box-shadow: 20px 25px 20px rgb(9, 10, 1);
+            transition: all 0.10s;
+            background-color:gold;
+            background-image: url(images/NEWS\ \ CARDS.jpg);
+            background-repeat: repeat;
+            background-size: 100% 100%;
+            
+            
+        }
+        .cards4
+        {
+            width: 200px;
+            height: 200px;
+            border-radius: 20px;
+            border: 7px solid rgb(7, 251, 39);
+            box-shadow: 20px 25px 20px rgb(9, 10, 1);
+            transition: all 0.10s;
+            background-color:gold;
+            background-image: url(images/SEARCH\ CARDS.jpg);
+            background-repeat: repeat;
+            background-size: 100% 100%;
+            
+            
+        }
+        .cards5
+        {
+            width: 200px;
+            height: 200px;
+            border-radius: 20px;
+            border: 7px solid rgb(7, 251, 39);
+            box-shadow: 20px 25px 20px rgb(9, 10, 1);
+            transition: all 0.10s;
+            background-color:gold;
+            background-image: url(images/TRAVEL\ CARDS.jpg);
+            background-repeat: repeat;
+            background-size: 100% 100%;
+            
+            
+        }
+        .cards6
+        {
+            width: 200px;
+            height: 200px;
+            border-radius: 20px;
+            border: 7px solid rgb(7, 251, 39);
+            box-shadow: 20px 25px 20px rgb(9, 10, 1);
+            transition: all 0.10s;
+            background-color:gold;
+            background-image: url(images/register\ now\ cards.webp);
+            background-repeat: repeat;
+            background-size: 100% 100%;
+            
+            
+        }
+        .cards1:hover
+        {
+           transform: scale(1.15,1.15);
+           box-shadow: 20PX 25PX 20PX rgb(72, 71, 71);
+        }
+        .cards2:hover
+        {
+           transform: scale(1.15,1.15);
+           box-shadow: 20PX 25PX 20PX rgb(72, 71, 71);
+        }
+        .cards3:hover
+        {
+           transform: scale(1.15,1.15);
+           box-shadow: 20PX 25PX 20PX rgb(72, 71, 71);
+        }
+        .cards4:hover
+        {
+           transform: scale(1.15,1.15);
+           box-shadow: 20PX 25PX 20PX rgb(72, 71, 71);
+        }
+        .cards5:hover
+        {
+           transform: scale(1.15,1.15);
+           box-shadow: 20PX 25PX 20PX rgb(72, 71, 71);
+        }
+        .cards6:hover
+        {
+           transform: scale(1.15,1.15);
+           box-shadow: 20PX 25PX 20PX rgb(55, 54, 54);
+        }
+        .footer
+        {
+            width: 100%;
+            height: 300px;
+            background-color: rgb(6, 6, 68);
+            color: aliceblue;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            border: 5px solid black;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <a href="home.html">
+                <li>HOME</li>
+            </a>
+            <a href="about us.html">
+                <li>ABOUT US</li>
+            </a>
+            <a href="portals.html">
+                <li>PORTALS</li>
+            </a>
+            <a href="gallery.html">
+                <li>GALLERY</li>
+            </a>
+            <a href="advertisement.html">
+                <li>ADVERTISEMENT</li>
+            </a>
+            <a href="index.html">
+                <li>SIGN OUT</li>
+            </a>
+            <a href="newid.html">
+                <li>SIGN IN</li>
+                
+            </a>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="intro1">
+            <div class="i1i"></div>
+            <div class="i1c">
+                <h1> BETTER SEATS</h1><br>
+                <p> WE ARE PROVIDING BETTER SEATS TO OUR CUSTOMER FOR BETTER AND COMFORTABLE FEEL OF THEIR JOURNEY.OUR
+                    BUSES ARE FULLY SUSPENSION AND REPAIRED.WE ARE ALSO PROVIDING A NON STOP JOURNEY.WE ARE ONLY
+                    STOPPING OUR BUS ON OUR SELF MAINTAINED STOPS.</p>
+            </div>
+        </div>
+        <div class="intro2">
+            <div class="i2i"></div>
+            <div class="i2c">
+                <h1>FOOD AND MEALS</h1>
+                <P>we are providing freash food to our passenger.like as chicken biryaani,non-veg items,veg
+                    items,chinease etc.we are providing a set of dinner set with each packets of food that is fully
+                    stainless steel.our food are cooked by well maintained and trained at </P>
+            </div>
+        </div>
+        <div class="intro3">
+            <div class="i3i"></div>
+            <div class="i3c">
+                <h1>STAFFS</h1>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, facere esse sed aspernatur
+                    obcaecati, ipsa libero doloribus nihil dolor provident nesciunt corporis, sapiente dolorum
+                    laudantium fugit unde deleniti praesentium. Suscipit molestias inventore minus ab beatae sequi
+                    veritatis quos quam vel saepe soluta error similique rerum placeat nobis, atque harum? Harum.</P>
+            </div>
+        </div>
+        <div class="intro4">
+            <div class="i4i"></div>
+            <div class="i4c">
+                <h1>FREE WIFI</h1>
+                <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, beatae! Dolore, perspiciatis
+                    accusantium voluptate rerum saepe quasi enim voluptatem. Sint dolore ex a quos, alias molestiae
+                    deleniti nemo iure fuga odio soluta recusandae in beatae omnis iusto quibusdam impedit nobis quis
+                    repudiandae aspernatur mollitia accusamus quidem totam. Nisi, necessitatibus atque!</P>
+            </div>
+        </div>
+        <div class="intro5">
+            <div class="i5i"></div>
+            <div class="i5c">
+                <h1>BUS FUELING</h1>
+                <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, beatae! Dolore, perspiciatis
+                    accusantium voluptate rerum saepe quasi enim voluptatem. Sint dolore ex a quos, alias molestiae
+                    deleniti nemo iure fuga odio soluta recusandae in beatae omnis iusto quibusdam impedit nobis quis
+                    repudiandae aspernatur mollitia accusamus quidem totam. Nisi, necessitatibus atque!</P>
+            </div>
+        </div>
+       
+    </div>
+
+</body>
+
+</html>
